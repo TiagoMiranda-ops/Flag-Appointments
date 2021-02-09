@@ -1,0 +1,30 @@
+<form action="/api/appointments" method="POST" id="add_appointment">
+    <div class="new_appointment">
+        <div class="form-group">
+            <label for="date" class="text-light">Proposed Date</label>
+            <input type="text" name="date" value="" placeholder="YYYY-MM-DD">
+        </div>
+        <div class="form-group">
+            <label for="customer" class="text-light">Customer</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="customer" value="" placeholder="Your name goes here">
+        </div>
+        <div class="form-group">
+            <label for="status" class="text-light">Status</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="status" value="" placeholder="Pending" readonly>
+        </div>
+        <div class="form-group">
+            <label for="broker" class="text-light">Broker</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="broker" value="" placeholder="To be assigned" readonly>
+        </div>
+    
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Schedule Now</button>
+        </div>
+
+
+    </div>
+</form>

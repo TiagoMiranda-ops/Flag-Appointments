@@ -1,0 +1,18 @@
+
+<% for(var i=0; i < appointments.length; i++) {%>
+    <tr>
+        <td><%=i + 1%></td>
+        <td><%= appointments[i].date %></td>
+        <td><%= appointments[i].customer %></td>
+        <td><%= appointments[i].status %></td>
+        <td><%= appointments[i].broker %></td>
+        <td>
+            <a href="/update-appointment?id=<%= appointments[i]._id%>" class="btn border-shadow update">
+                <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+            </a>
+            <a class="btn border-shadow delete">
+                <span class="text-gradient"><i class="fas fa-times"></i></span>
+            </a>
+        </td>
+    </tr>
+    <% }%>

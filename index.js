@@ -29,7 +29,7 @@ app.set("view engine", "ejs");
 app.use('/css', express.static(path.resolve(__dirname, "assets/css")));
 
 //using the routes specified in routes/api.js, first through 'api', then passing the route proper in the second parameter
-app.use('/api', routes);
+app.use('/', routes);
 
 //error handling middleware, the 'next' parameter on our api method routes
 app.use(function(err, req, res, next){
